@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abel's Food Company</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="logo">Food<span>bel.</span></div>
+      <nav class="nav-links">
+        <a href="#"><strong>Home</strong></a>
+        <a href="#about"><strong>About</strong></a>
+        <a href="#menu"><strong>Menu</strong></a>
+        <a href="#contact"><strong>Contact</strong></a>
+
+
+      </nav>
+      <div class="nav-actions">
+        <a href="#" onclick="openLoginModal()"><strong>Login</strong></a>
+        <a href="cart.html" class="view-cart-btn"> <strong>Cart 🛒</strong></a>
+      </div>
+    </header>
+<br>
+<div id="notification" class="notification"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>
+          Enjoy Our <br />
+          <span>Delicious Meal</span>
+        </h1>
+        <p>
+          "Enjoy fresh, flavorful meals made with care. At
+          <strong style="color: black">Foodbel</strong>, every bite is delicious
+          and satisfying. Taste the difference today!"
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="img/pasta pic.jpg" alt="Spaghetti Plate" />
+      </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <div class="about-divider"></div>
+
+      <!-- How It All Began -->
+      <div class="about-history">
+        <div class="about-image">
+          <img src="img/chef abel.jpg" alt="Founder Image" />
+        </div>
+        <div class="about-text">
+          <h3>How It All Began</h3>
+          <blockquote>"Great food starts with great passion"</blockquote>
+          <p>
+            In 2005, our founder
+            <strong style="color: black">Abel Tewodros</strong> transformed his
+            grandmother's recipes into a beloved food culture. What began as a
+            small kitchen in Addis Ababa has grown into a beloved food company
+            across the world.
+          </p>
+          <h4>Our Inspiration</h4>
+          <ul>
+            <li>Family recipes passed down through generations</li>
+            <li>Locally sourced, organic ingredients</li>
+            <li>Traditional cooking methods</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Meet Our Founders -->
+      <div class="about-founders">
+        <h3>Meet Our Founders</h3>
+        <div class="founders-grid">
+          <div class="founder-card">
+            <div class="founder-image">
+              <img src="img/chef abel2.jpg" alt="Abel Tewodros" />
+            </div>
+            <h4>Abel Tewodros</h4>
+            <p>Head Chef & Founder</p>
+          </div>
+          <div class="founder-card">
+            <div class="founder-image">
+              <img src="img/chef 3.jpg" alt="Yohannes Assefa" />
+            </div>
+            <h4>Fitsum Gashaw</h4>
+            <p>Assistance Chef</p>
+          </div>
+          <div class="founder-card">
+            <div class="founder-image">
+              <img src="img/women chef.jpg" alt="Selamawit Tekle" />
+            </div>
+            <h4>Mekdelawit Habtamu</h4>
+            <p>Assi.chef & Manager</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+      <h2>Our Popular Dishes</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="img/burger.jpg" alt="Burger" />
+          <h3>Cheese Burger</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>6.99$</p>
+          
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/pizza.jpg" alt="Pizza" />
+          <h3>Pizza</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p >9.99$</p>
+          
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/salad.jpg" alt="Salad" />
+          <h3>Greek Salad</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div> 
+          <p>4.99$</p>
+         
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/chicken.jpg" alt="Chicken Wings" />
+          <h3>Spicy Chicken Wings</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>7.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/pasta 2.jpg" alt="Pasta" />
+          <h3>Spaghetti</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div> 
+          <p>9.99$</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/rice.jpg" alt="Fried Rice" />
+          <h3>Vegetable Fried Rice</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>6.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/noodles.jpg" alt="Vegan Bowl" />
+          <h3>Noodles</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>8.50$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/Doro.jpg" alt="Steak" />
+          <h3>Doro Wat (ዶሮ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>12.99$</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/Kitfo.jpg" alt="Ice Cream" />
+          <h3>Kitfo (ክትፎ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+           <p>11.99$</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/tibs.jpg" alt="Tibs" />
+          <h3>Tibs (ጥብስ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          
+          <p>9.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/shiro.jpg" alt="Shiro" />
+          <h3>Shiro (ሽሮ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>4.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/Beyaynet.jpg" alt="Beyaynet" />
+          <h3>Beyaynet (በየአይነት)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>5.99$</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+    <!-- Traditional Menus Section -->
+    <section id="traditional-menu" class="traditional-menu-section">
+      <h2>Traditional Menus</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="img/genfo.jpg" alt="Doro Wat" />
+          <h3>Genfo (ገንፎ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>6.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/kitfo.jpg" alt="Kitfo" />
+          <h3>Kitfo (ክትፎ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div> 
+          <p>11.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/quanta firfir.jpg" alt="Tibs" />
+          <h3>Quanta Firfir (ቋንጣ ፍርፍር)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>8.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/shiro.jpg" alt="Shiro" />
+          <h3>Shiro (ሽሮ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>4.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/beyaynet.jpg" alt="Beyaynet" />
+          <h3>Beyaynet (በየአይነት)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>5.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/gomen.jpg" alt="Injera" />
+          <h3>Gomen (ጎመን)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>4.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/tire siga.jpg" alt="Injera" />
+          <h3>Raw Meat (ጥሬ ስጋ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>7.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/Mahiberawi.jpg" alt="Injera" />
+          <h3>Mahiberawi (ማህበራዊ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>14.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/chechebsa.jpg" alt="Injera" />
+          <h3>Chechebsa (ጨጨብሳ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>5.99$</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="img/tej.jpg" alt="Injera" />
+          <h3>Tej (ጠጅ)</h3>
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div> 
+          <p>3.99$</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-divider"></div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Support</h3>
+          <p>support@foodbel.com</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Phone</h3>
+          <p>+251912131415</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Head Quarter</h3>
+          <p>Ethiopia, Addis Ababa</p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">Food<span>bel.</span></div>
+        <nav class="footer-links">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p>&copy; 2025 Foodbel. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Login Modal -->
+    <div id="login-modal" class="login-modal">
+      <div class="login-modal-content">
+        <span class="close-btn" onclick="closeLoginModal()">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <input type="text" id="username" placeholder="Username" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+        <p id="login-error" class="error-message"></p>
+      </div>
+    </div>
+    <div id="search-results" class="search-results"></div>
+    
+  </body>
+</html>

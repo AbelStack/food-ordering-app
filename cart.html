@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - Foodor</title>
+  <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff7a00, #ff4500);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .cart-container {
+      padding: 40px;
+      max-width: 1400px; /* Restrict the width */
+      margin: 0 auto; 
+    }
+
+    .cart-title {
+      font-size: 34px;
+      font-weight: 750;
+      margin-bottom: 18px;
+      color: #222;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f7f7f7;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .cart-item img {
+      width: 60px;
+      height: 60px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .item-details {
+      flex: 1;
+      margin-left: 15px;
+    }
+
+    .item-name {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .item-price {
+      color: #ff4500;
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .quantity-control {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .quantity-control button {
+      background: #ff7a00;
+      border: none;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .total-section {
+      text-align: right;
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .total-section div {
+      margin-bottom: 10px;
+    }
+
+    .checkout-button {
+      margin-top: 15px;
+      background: #ff4500;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    /* Container for cart and payment sections */
+.cart-payment-container {
+  display: flex; /* Use Flexbox to align sections side by side */
+  justify-content: space-between; /* Add space between the sections */
+  gap: 20px; /* Add spacing between the cart and payment sections */
+  max-width: 1200px; /* Restrict the overall width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+}
+
+/* Cart Section */
+.cart-container {
+  flex: 2; /* Take up more space compared to the payment section */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    /* Add styles for the payment section */
+    .payment-section {
+      margin-top: 10px;
+      padding: 15px;
+      background: #f7f7f7;
+      border-radius: 10px;
+      max-width: 800px;
+      
+    }
+    /* Payment Section */
+.payment-section {
+  flex: 1; /* Take up less space compared to the cart section */
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the title and spacing */
+.cart-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.payment-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+    .payment-section h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .payment-method {
+      margin-bottom: 15px;
+    }
+
+    .payment-method label {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    .payment-details {
+      display: none;
+      margin-top: 15px;
+    }
+    .payment-details input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .checkout-button {
+      margin-top: 15px;
+      background: #ff4500;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Food<span style="color: orange">bel</span>.</div>
+    <nav>
+      <a href="index.html"><strong>Home</strong></a>
+      <a href="index.html#about"><strong>About</strong></a>
+      <a href="index.html#menu"><strong>Menu</strong></a>
+      <a href="index.html#contact"><strong>Contact</strong></a></a>
+    </nav>
+  </header>
+
+  <div class="cart-payment-container">
+    <!-- Cart Section -->
+    <div class="cart-container">
+      <div class="cart-title">Your Cart</div>
+      <div id="cart-items"></div>
+      <div class="total-section">
+        <div>Subtotal: $<span id="subtotal">0.00</span></div>
+        <div>Tax (10%): $<span id="tax">0.00</span></div>
+        <div><strong>Total: $<span id="total">0.00</span></strong></div>
+        
+      </div>
+    </div>
+  
+    <!-- Payment Section -->
+    <div class="payment-section">
+      <h3>Payment Method</h3>
+      <div class="payment-method">
+        <input type="radio" id="credit-card" name="payment-method" value="credit-card" />
+        <label for="credit-card">Credit Card</label>
+      </div>
+      <div class="payment-method">
+        <input type="radio" id="paypal" name="payment-method" value="paypal" />
+        <label for="paypal">PayPal</label>
+      </div>
+  
+      <!-- Credit Card Details -->
+      <div id="credit-card-details" class="payment-details">
+        <input type="text" id="card-name" placeholder="Cardholder Name" />
+        <input type="text" id="card-number" placeholder="Card Number" />
+        <input type="text" id="card-expiry" placeholder="Expiry Date (MM/YY)" />
+        <input type="text" id="card-cvv" placeholder="CVV" />
+      </div>
+  
+      <!-- PayPal Details -->
+      <div id="paypal-details" class="payment-details">
+        <input type="email" id="paypal-email" placeholder="PayPal Email" />
+      </div>
+  
+      <button class="checkout-button" onclick="processPayment()">Pay Now</button>
+    </div>
+  </div>
+  
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cartItemsContainer = document.getElementById('cart-items');
+      const subtotalDisplay = document.getElementById('subtotal');
+      const taxDisplay = document.getElementById('tax');
+      const totalDisplay = document.getElementById('total');
+
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      function updateCart() {
+        cartItemsContainer.innerHTML = '';
+        let subtotal = 0;
+
+        if (cart.length === 0) {
+          cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+        } else {
+          cart.forEach((item, index) => {
+            const itemTotal = item.price * item.quantity;
+            subtotal += itemTotal;
+
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('cart-item');
+
+            itemDiv.innerHTML = `
+              <img src="${item.image}" alt="${item.image}">
+              <div class="item-details">
+                <div class="item-name">${item.name}</div>
+                <div class="item-price">$${item.price.toFixed(2)}</div>
+                <div class="quantity-control">
+                  <button onclick="changeQuantity(${index}, -1)">-</button>
+                  <span>${item.quantity}</span>
+                  <button onclick="changeQuantity(${index}, 1)">+</button>
+                </div>
+              </div>
+              <div class="item-price">$${itemTotal.toFixed(2)}</div>
+            `;
+
+            cartItemsContainer.appendChild(itemDiv);
+          });
+        }
+
+        const tax = subtotal * 0.1;
+        const total = subtotal + tax;
+
+        subtotalDisplay.textContent = subtotal.toFixed(2);
+        taxDisplay.textContent = tax.toFixed(2);
+        totalDisplay.textContent = total.toFixed(2);
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+      }
+
+      window.changeQuantity = function(index, change) {
+        cart[index].quantity += change;
+        if (cart[index].quantity <= 0) cart.splice(index, 1);
+        updateCart();
+      };
+
+      window.processPayment = function() {
+        const paymentMethod = document.querySelector('input[name="payment-method"]:checked');
+        if (!paymentMethod) {
+          alert('Please select a payment method.');
+          return;
+        }
+
+        if (paymentMethod.value === 'credit-card') {
+          const cardName = document.getElementById('card-name').value;
+          const cardNumber = document.getElementById('card-number').value;
+          const cardExpiry = document.getElementById('card-expiry').value;
+          const cardCvv = document.getElementById('card-cvv').value;
+
+          if (!cardName || !cardNumber || !cardExpiry || !cardCvv) {
+            alert('Please fill in all credit card details.');
+            return;
+          }
+
+          alert('Payment successful! Thank you for your order.');
+        } else if (paymentMethod.value === 'paypal') {
+          const paypalEmail = document.getElementById('paypal-email').value;
+
+          if (!paypalEmail) {
+            alert('Please enter your PayPal email.');
+            return;
+          }
+
+          alert('Payment successful via PayPal! Thank you for your order.');
+        }
+          
+
+localStorage.removeItem('cart');
+window.location.href = 'index.html';
+};
+
+const paymentMethods = document.querySelectorAll('input[name="payment-method"]');
+paymentMethods.forEach((method) => {
+method.addEventListener('change', () => {
+  document.querySelectorAll('.payment-details').forEach((detail) => {
+    detail.style.display = 'none';
+  });
+
+  if (method.value === 'credit-card') {
+    document.getElementById('credit-card-details').style.display = 'block';
+  } else if (method.value === 'paypal') {
+    document.getElementById('paypal-details').style.display = 'block';
+  }
+});
+});
+
+updateCart();
+});
+  </script>
+</body>
+</html>
