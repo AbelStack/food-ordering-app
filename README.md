@@ -1,7 +1,5 @@
 # FoodBel Restaurant Website
 
-![FoodBel Restaurant Preview](https://via.placeholder.com/800x400?text=FoodBel+Screenshot+Preview)  
-*Replace with actual screenshot of your website*
 
 ## Overview
 
@@ -30,3 +28,10 @@ FoodBel is a responsive restaurant website built with pure HTML, CSS, and JavaSc
 *Replace with your GitHub Pages link*
 
 ## Project Structure
+foodbel/
+├── index.html # Main homepage
+├── cart.html # Shopping cart page
+├── style.css # All styles
+├── script.js # Main JavaScript functionality
+├── img/ # All image assets
+└── README.md # This file
