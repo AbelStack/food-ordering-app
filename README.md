@@ -1,7 +1,5 @@
 FoodBel Restaurant Website
 
-FoodBel Restaurant Preview
-Replace with actual screenshot of your website
 Overview
 
 A modern, responsive website for FoodBel Restaurant built with pure HTML, CSS, and JavaScript. Features menu browsing, contact information, and an interactive dining experience.
