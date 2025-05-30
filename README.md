@@ -24,8 +24,8 @@ FoodBel is a responsive restaurant website built with pure HTML, CSS, and JavaSc
 
 ## Live Demo
 
-[View Live Demo](https://yourusername.github.io/foodbel)  
-*Replace with your GitHub Pages link*
+[View Live Demo]([https://yourusername.github.io/foodbel](https://food-ordering-app-lovat-three.vercel.app/))  
+
 
 ## Project Structure
 foodbel/
