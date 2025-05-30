@@ -1,37 +1,32 @@
-FoodBel Restaurant Website
+# FoodBel Restaurant Website
 
-Overview
+![FoodBel Restaurant Preview](https://via.placeholder.com/800x400?text=FoodBel+Screenshot+Preview)  
+*Replace with actual screenshot of your website*
 
-A modern, responsive website for FoodBel Restaurant built with pure HTML, CSS, and JavaScript. Features menu browsing, contact information, and an interactive dining experience.
-Key Features
+## Overview
 
-    Fully Responsive: Works on all devices (mobile, tablet, desktop)
+FoodBel is a responsive restaurant website built with pure HTML, CSS, and JavaScript. It features online food ordering functionality with a shopping cart system, menu browsing, and restaurant information.
 
-    Interactive Elements:
+## Key Features
 
-        Image gallery/slider
+- **Responsive Design**: Works on all devices (mobile, tablet, desktop)
+- **Interactive Menu**: Browse food items with ratings and prices
+- **Shopping Cart**: Add/remove items and adjust quantities
+- **Checkout System**: Secure payment processing simulation
+- **Modern UI**: Clean design with smooth animations
+- **Traditional Ethiopian Dishes**: Special section for authentic cuisine
 
-        Dynamic menu filtering
+## Technologies Used
 
-        Contact form validation
+- **Frontend**: HTML5, CSS3, JavaScript (ES6)
+- **Fonts**: Google Fonts (Poppins)
+- **Icons**: Font Awesome
+- **Storage**: LocalStorage for cart persistence
+- **No Frameworks**: Pure vanilla implementation
 
-    Performance Optimized: Fast loading with minimal dependencies
+## Live Demo
 
-    Accessibility Focused: Semantic HTML and proper contrast ratios
+[View Live Demo](https://yourusername.github.io/foodbel)  
+*Replace with your GitHub Pages link*
 
-Technologies Used
-
-    Core: HTML5, CSS3, JavaScript (ES6)
-
-    No Frameworks: Pure vanilla implementation
-
-    Optional Enhancements:
-
-        Font Awesome for icons
-
-        Google Fonts for typography
-
-Live Demo
-
-Visit FoodBel Restaurant
-
+## Project Structure
